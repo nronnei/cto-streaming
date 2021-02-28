@@ -1,9 +1,9 @@
-import dotenv from 'dotenv';
-
-// Load environment variables
-dotenv.config();
+import lib from './lib/index.js';
 
 // Prove it's working
-console.log(process.env.AWS_PROFILE);
-
-process.exit(0);
+(async () => {
+  console.log(process.env.AWS_REGION);
+  console.log(process.env.AWS_PROFILE);
+  await lib.conversion();
+  process.exit(0);
+})();
