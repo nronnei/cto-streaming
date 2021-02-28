@@ -2,7 +2,7 @@
  * The "version prefix" for the documentary's output location in S3
  * @constant {string} CTO_DOCUMENTARY_VERSION
  */
-export const CTO_DOCUMENTARY_VERSION = 'v12';
+export const CTO_DOCUMENTARY_VERSION = 12;
 
 /**
  * The resolutions we want to convert to in MediaConvert
