@@ -1,9 +1,9 @@
-import lib from './lib/index.js';
+import conversion from './lib/media-convert/index.js';
 
 // Prove it's working
 (async () => {
-  console.log(process.env.AWS_REGION);
-  console.log(process.env.AWS_PROFILE);
-  await lib.conversion();
+  console.log('Creating new template');
+  const newTemplate = await conversion.publishUpdatedTemplate();
+  console.log(Object.keys(newTemplate));
   process.exit(0);
 })();
