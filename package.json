@@ -1,0 +1,16 @@
+{
+  "name": "cto-streaming-manager",
+  "version": "0.1.0",
+  "description": "Easily convert videos to streaming formats",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Nick Ronnei",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aws-sdk": "^2.853.0",
+    "dotenv": "^8.2.0"
+  }
+}
